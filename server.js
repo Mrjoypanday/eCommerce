@@ -8,9 +8,11 @@ import catagoryRoute from "./routes/catagoryRoute.js";
 import proudctRoute from "./routes/proudctRoute.js";
 import bannerRoute from "./routes/bannerRoute.js";
 import path from "path";
+import {fileURLToPath} from 'url';
 //config
 dotenv.config();
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 //databse
 connectDB();
 //obj
