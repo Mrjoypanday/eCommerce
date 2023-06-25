@@ -36,4 +36,6 @@ app.use("*", function (req, res) {
 
 const PORT = process.env.PORT || 5053;
 
-app.listen(PORT, () => {});
+app.listen(PORT, () => {
+  console.log(`port running on ${PORT}`)
+});
